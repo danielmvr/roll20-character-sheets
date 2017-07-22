@@ -1,0 +1,367 @@
+<p style="text-align: center;">
+<img src="https://uploaddeimagens.com.br/images/001/005/903/full/logoobscuraPNG.png?1500760866" style="max-height: 200px;" />
+</p>
+
+<div class="sheet-3colrow">
+    <div class="sheet-col">
+        <label>Nome:</label><input type="text" name="attr_Nome" />
+        <label>Altura:</label><input type="text" name="attr_Altura" />
+        <label>Idade:</label><input type="text" name="attr_Idade" />
+    </div>
+    <div class="sheet-col">
+        <label>Nível:</label><input type="text" name="attr_Nivel" />
+        <label>Peso:</label><input type="text" name="attr_Peso" />
+        <label>Cabelo:</label><input type="text" name="attr_Cabelo" />
+        
+    </div>
+    <div class="sheet-col">
+        <label>XP:</label><input type="text" name="attr_XP" />
+        <label>Olhos:</label><input type="text" name="attr_Olhos" />
+        <label>Local Nascimento:</label><input type="text" name="attr_Nascimento" />
+        
+    </div>
+</div>
+
+<br>
+    <div>
+        <label>Perfil Psicológico:</label><textarea name="attr_Perfil" style="width:780px; height:100px"></textarea>
+    </div>
+    <div>
+        <label>Santuario:</label><textarea name="attr_Santuario" style="width:780px; height:20px"></textarea>
+    </div>
+    <div>
+        <label>Problemas & Pertubações:</label><textarea name="attr_problemas" style="width:780px; height:60px"></textarea>
+    </div>
+    <div>
+        <label>História:</label><textarea name="attr_historia" style="width:780px; height:100px"></textarea>
+    </div>
+
+
+
+<hr/>
+<h1 style="text-align: center">ATRIBUTOS</h1>
+<Br><br>
+<div class="sheet-3colrow">
+    <div class="sheet-col" style="text-align: center">
+        <h2 style="text-align: center">KARMA +</h2>
+        <br>
+        <input type="radio" name="attr_Karma+" value="1" /><span></span>
+        <input type="radio" name="attr_Karma+" value="2" /><span></span>
+        <input type="radio" name="attr_Karma+" value="3" checked="checked"/><span></span>
+        <input type="radio" name="attr_Karma+" value="4" /><span></span>
+        <input type="radio" name="attr_Karma+" value="6" /><span></span>
+        <input type="radio" name="attr_Karma+" value="7" /><span></span>
+        <input type="radio" name="attr_Karma+" value="8" /><span></span>
+        <input type="radio" name="attr_Karma+" value="9" /><span></span>
+        <input type="radio" name="attr_Karma+" value="10" /><span></span>
+    </div>
+    
+    <div class="sheet-col" style="text-align: center" >
+        <h3 style="text-align: center">Vida</h3>
+         <input type="text" name="attr_Vida" style="width:100px; height:100px;text-align: center; font-size:80px" />
+         <br>
+            <h4 style="text-align: center">
+             Total</h4><input type="text" name="attr_Vida_max" style="width:50px; height:50px;text-align: center; font-size:25px" />
+    </div>
+    
+    <div class="sheet-col" style="text-align: center">
+        <h2 style="text-align: center">KARMA -</h2>
+        <br>
+        <input type="radio" name="attr_Karma-" value="1" checked="checked" /><span></span>
+        <input type="radio" name="attr_Karma-" value="2" /><span></span>
+        <input type="radio" name="attr_Karma-" value="3" /><span></span>
+        <input type="radio" name="attr_Karma-" value="4" /><span></span>
+        <input type="radio" name="attr_Karma-" value="5" /><span></span>
+        <input type="radio" name="attr_Karma-" value="6" /><span></span>
+        <input type="radio" name="attr_Karma-" value="7" /><span></span>
+        <input type="radio" name="attr_Karma-" value="8" /><span></span>
+        <input type="radio" name="attr_Karma-" value="9" /><span></span>
+        <input type="radio" name="attr_Karma-" value="10" /><span></span>
+    </div>
+</div>
+<div class="sheet-colrow" >
+    
+    <div class="sheet-col" style="width:95px ">
+            
+        
+    </div>
+    <div class="sheet-col" style="width:175px">
+        
+    </div>
+    
+    <div class="sheet-col" style="width:175px">
+        
+    </div>
+    <div class="sheet-col" style="width:95px">
+        
+        
+    </div>
+</div>
+
+<hr/>
+
+<h1 style="margin-bottom: 10px; text-align: center;">PERÍCIAS</h1>
+
+
+<div class="sheet-colrow">
+    <div class="sheet-col" style="width:33%">
+        <h4 >Ânimo
+            <input type="radio" name="attr_animo" value="1" /><span></span>
+            <input type="radio" name="attr_animo" value="2" /><span></span>
+            <input type="radio" name="attr_animo" value="3" /><span></span>
+            <input type="radio" name="attr_animo" value="4" /><span></span>
+            <input type="radio" name="attr_animo" value="5" /><span></span>
+            <input type="radio" name="attr_animo" value="6" /><span></span>
+        <button type='roll' name='roll_animo' value='&{template:default} {{name=Teste de ÂNIMO @{animo} }} {{Sucessos=[[{5d4}>3+@{animo} ]]}}'></button>
+        </h4>
+        <h4 >Atletismo
+            <input type="radio" name="attr_atletismo" value="1" /><span></span>
+            <input type="radio" name="attr_atletismo" value="2" /><span></span>
+            <input type="radio" name="attr_atletismo" value="3" /><span></span>
+            <input type="radio" name="attr_atletismo" value="4" /><span></span>
+            <input type="radio" name="attr_atletismo" value="5" /><span></span>
+            <input type="radio" name="attr_atletismo" value="6" /><span></span>
+        <button type='roll' name='roll_atletismo' value='&{template:default} {{name=Teste de ATLETISMO @{atletismo} }} {{Sucessos=[[{5d4}>3+@{atletismo} ]]}}'></button>
+        </h4>
+        <h4 >C. Armado
+            <input type="radio" name="attr_Combate_Armado" value="1" /><span></span>
+            <input type="radio" name="attr_Combate_Armado" value="2" /><span></span>
+            <input type="radio" name="attr_Combate_Armado" value="3" /><span></span>
+            <input type="radio" name="attr_Combate_Armado" value="4" /><span></span>
+            <input type="radio" name="attr_Combate_Armado" value="5" /><span></span>
+            <input type="radio" name="attr_Combate_Armado" value="6" /><span></span>
+        <button type='roll' name='roll_Combate_Armado' value='&{template:default} {{name=Teste de COMBATE ARMADO @{Combate_Armado} }} {{Sucessos=[[{5d4}>3+@{Combate_Armado} ]]}}'></button>
+        </h4>
+        <h4 >C. Desarmado
+            <input type="radio" name="attr_Combate_Desarmado" value="1" /><span></span>
+            <input type="radio" name="attr_Combate_Desarmado" value="2" /><span></span>
+            <input type="radio" name="attr_Combate_Desarmado" value="3" /><span></span>
+            <input type="radio" name="attr_Combate_Desarmado" value="4" /><span></span>
+            <input type="radio" name="attr_Combate_Desarmado" value="5" /><span></span>
+            <input type="radio" name="attr_Combate_Desarmado" value="6" /><span></span>
+        <button type='roll' name='roll_Combate_Desarmado' value='&{template:default} {{name=Teste de COMBATE DESARMADO @{Combate_Desarmado} }} {{Sucessos=[[{5d4}>3+@{Combate_Desarmado} ]]}}'></button>
+        </h4>
+        <h4 >C. Distancia
+            <input type="radio" name="attr_Combate_Distancia" value="1" /><span></span>
+            <input type="radio" name="attr_Combate_Distancia" value="2" /><span></span>
+            <input type="radio" name="attr_Combate_Distancia" value="3" /><span></span>
+            <input type="radio" name="attr_Combate_Distancia" value="4" /><span></span>
+            <input type="radio" name="attr_Combate_Distancia" value="5" /><span></span>
+            <input type="radio" name="attr_Combate_Distancia" value="6" /><span></span>
+        <button type='roll' name='roll_Combate_Distancia' value='&{template:default} {{name=Teste de COMBATE À DISTANCIA @{Combate_Distancia} }} {{Sucessos=[[{5d4}>3+@{Combate_Distancia} ]]}}'></button>
+        </h4>
+       
+    </div>
+
+    <div class="sheet-col" style="width:33%">
+        <h4 >Conhecimentos
+            <input type="radio" name="attr_Conhecimentos" value="1" /><span></span>
+            <input type="radio" name="attr_Conhecimentos" value="2" /><span></span>
+            <input type="radio" name="attr_Conhecimentos" value="3" /><span></span>
+            <input type="radio" name="attr_Conhecimentos" value="4" /><span></span>
+            <input type="radio" name="attr_Conhecimentos" value="5" /><span></span>
+            <input type="radio" name="attr_Conhecimentos" value="6" /><span></span>
+        <button type='roll' name='roll_conhecimentos' value='&{template:default} {{name=Teste de CONHECIMENTOS @{conhecimentos} }} {{Sucessos=[[{5d4}>3+@{conhecimentos} ]]}}'></button>
+        </h4>
+        <h4 >Crime
+            <input type="radio" name="attr_Crime" value="1" /><span></span>
+            <input type="radio" name="attr_Crime" value="2" /><span></span>
+            <input type="radio" name="attr_Crime" value="3" /><span></span>
+            <input type="radio" name="attr_Crime" value="4" /><span></span>
+            <input type="radio" name="attr_Crime" value="5" /><span></span>
+            <input type="radio" name="attr_Crime" value="6" /><span></span>
+        <button type='roll' name='roll_crime' value='&{template:default} {{name=Teste de CRIME @{crime} }} {{Sucessos=[[{5d4}>3+@{crime} ]]}}'></button>
+        </h4>
+        <h4 >Força
+            <input type="radio" name="attr_forca" value="1" /><span></span>
+            <input type="radio" name="attr_forca" value="2" /><span></span>
+            <input type="radio" name="attr_forca" value="3" /><span></span>
+            <input type="radio" name="attr_forca" value="4" /><span></span>
+            <input type="radio" name="attr_forca" value="5" /><span></span>
+            <input type="radio" name="attr_forca" value="6" /><span></span>
+        <button type='roll' name='roll_forca' value='&{template:default} {{name=Teste de FORÇA @{forca} }} {{Sucessos=[[{5d4}>3+@{forca} ]]}}'></button>
+        </h4>
+        <h4 >Idiomas
+            <input type="radio" name="attr_Idiomas" value="1" /><span></span>
+            <input type="radio" name="attr_Idiomas" value="2" /><span></span>
+            <input type="radio" name="attr_Idiomas" value="3" /><span></span>
+            <input type="radio" name="attr_Idiomas" value="4" /><span></span>
+            <input type="radio" name="attr_Idiomas" value="5" /><span></span>
+            <input type="radio" name="attr_Idiomas" value="6" /><span></span>
+        <button type='roll' name='roll_idiomas' value='&{template:default} {{name=Teste de IDIOMAS @{idiomas} }} {{Sucessos=[[{5d4}>3+@{idiomas} ]]}}'></button>
+        </h4>
+        <h4 >Investigação
+            <input type="radio" name="attr_Investigacao" value="1" /><span></span>
+            <input type="radio" name="attr_Investigacao" value="2" /><span></span>
+            <input type="radio" name="attr_Investigacao" value="3" /><span></span>
+            <input type="radio" name="attr_Investigacao" value="4" /><span></span> 
+            <input type="radio" name="attr_Investigacao" value="5" /><span></span> 
+            <input type="radio" name="attr_Investigacao" value="6" /><span></span>
+        <button type='roll' name='roll_investigacao' value='&{template:default} {{name=Teste de INVESTIGAÇÃO @{investigacao} }} {{Sucessos=[[{5d4}>3+@{investigacao} ]]}}'></button>
+        </h4>
+       
+     
+    </div>
+   
+    <div class="sheet-col" style="width:33%">
+        <h4 >Medicina
+            <input type="radio" name="attr_Medicina" value="1" /><span></span>
+            <input type="radio" name="attr_Medicina" value="2" /><span></span> 
+            <input type="radio" name="attr_Medicina" value="3" /><span></span>  
+            <input type="radio" name="attr_Medicina" value="4" /><span></span>  
+            <input type="radio" name="attr_Medicina" value="5" /><span></span>  
+            <input type="radio" name="attr_Medicina" value="6" /><span></span>
+        <button type='roll' name='roll_medicina' value='&{template:default} {{name=Teste de MEDICINA @{medicina} }} {{Sucessos=[[{5d4}>3+@{medicina} ]]}}'></button>
+        </h4>
+        <h4 >Natureza
+            <input type="radio" name="attr_Natureza" value="1" /><span></span>
+            <input type="radio" name="attr_Natureza" value="2" /><span></span>
+            <input type="radio" name="attr_Natureza" value="3" /><span></span>
+            <input type="radio" name="attr_Natureza" value="4" /><span></span> 
+            <input type="radio" name="attr_Natureza" value="5" /><span></span> 
+            <input type="radio" name="attr_Natureza" value="6" /><span></span>
+        <button type='roll' name='roll_natureza' value='&{template:default} {{name=Teste de NATUREZA @{natureza} }} {{Sucessos=[[{5d4}>3+@{natureza} ]]}}'></button>
+        </h4>
+        <h4 >Raciocínio
+            <input type="radio" name="attr_Raciocinio" value="1" /><span></span>
+            <input type="radio" name="attr_Raciocinio" value="2" /><span></span>
+            <input type="radio" name="attr_Raciocinio" value="3" /><span></span>
+            <input type="radio" name="attr_Raciocinio" value="4" /><span></span>
+            <input type="radio" name="attr_Raciocinio" value="5" /><span></span>
+            <input type="radio" name="attr_Raciocinio" value="6" /><span></span>
+        <button type='roll' name='roll_raciocinio' value='&{template:default} {{name=Teste de RACIOCÍNIO @{raciocinio} }} {{Sucessos=[[{5d4}>3+@{raciocinio} ]]}}'></button>
+        </h4>
+        <h4 >Sociabilidade
+            <input type="radio" name="attr_Sociabilidade" value="0" /><span></span>
+            <input type="radio" name="attr_Sociabilidade" value="1" /><span></span>
+            <input type="radio" name="attr_Sociabilidade" value="2" /><span></span>
+            <input type="radio" name="attr_Sociabilidade" value="3" /><span></span>
+            <input type="radio" name="attr_Sociabilidade" value="4" /><span></span>
+            <input type="radio" name="attr_Sociabilidade" value="5" /><span></span>
+        <button type='roll' name='roll_sociabilidade' value='&{template:default} {{name=Teste de SOCIABILIDADE @{sociabilidade} }} {{Sucessos=[[{5d4}>3+@{sociabilidade} ]]}}'></button>
+        </h4>
+        <h4 >Tecnologia
+            <input type="radio" name="attr_Tecnologia" value="0" /><span></span>
+            <input type="radio" name="attr_Tecnologia" value="1" /><span></span>
+            <input type="radio" name="attr_Tecnologia" value="2" /><span></span>
+            <input type="radio" name="attr_Tecnologia" value="3" /><span></span>
+            <input type="radio" name="attr_Tecnologia" value="4" /><span></span>
+            <input type="radio" name="attr_Tecnologia" value="5" /><span></span>
+        <button type='roll' name='roll_tecnologia' value='&{template:default} {{name=Teste de TECNOLOGIA @{tecnologia} }} {{Sucessos=[[{5d4}>3+@{tecnologia} ]]}}'></button>
+        </h4>
+    
+    </div>
+   
+</div>
+
+<hr />
+
+<h1 style="margin-bottom: 10px; text-align: center;">EQUIPAMENTOS</h1>
+
+<div class="sheet-colrow" >
+    <div class="sheet-col" style="width:100%">
+        <br><h4>Arma à Distancia &ensp;
+            <input type="text" name="attr_nomearma1" placeholder="|digite o nome da arma|" />&ensp;
+            <input type="radio" name="attr_arma1" value="1" /><span></span>
+            <input type="radio" name="attr_arma1" value="2" /><span></span>
+            <input type="radio" name="attr_arma1" value="3" /><span></span>
+            <input type="radio" name="attr_arma1" value="4" /><span></span>
+            <input type="radio" name="attr_arma1" value="5" /><span></span>
+            <input type="radio" name="attr_arma1" value="6" /><span></span>
+        <button type='roll' name='roll_arma1' value=#macroataque1></button>
+                &ensp;Munição&ensp;<input type="text" name="attr_municao1" style="width:30px" />
+                &ensp;/&ensp;<input type="text" name="attr_municaoMax" style="width:30px" />&ensp;
+        <button type='roll' name='roll_reload1' value=#reload>RELOAD</button>
+        <input type="text" name="attr_obsarma1" placeholder="|observações&poderes|" />
+        
+        <br><h4>Arma à Distancia &ensp;
+            <input type="text" name="attr_nomearma3" placeholder="|digite o nome da arma|" />&ensp;
+            <input type="radio" name="attr_arma3" value="1" /><span></span>
+            <input type="radio" name="attr_arma3" value="2" /><span></span>
+            <input type="radio" name="attr_arma3" value="3" /><span></span>
+            <input type="radio" name="attr_arma3" value="4" /><span></span>
+            <input type="radio" name="attr_arma3" value="5" /><span></span>
+            <input type="radio" name="attr_arma3" value="6" /><span></span>
+        <button type='roll' name='roll_arma3' value=#macroataque3></button>
+                &ensp;Munição&ensp;<input type="text" name="attr_municao3" style="width:30px" />
+                &ensp;/&ensp;<input type="text" name="attr_municaoMax3" style="width:30px" />&ensp;
+        <button type='roll' name='roll_reload3' value=#reload3>RELOAD</button>
+        <input type="text" name="attr_obsarma3" placeholder="|observações&poderes|" />
+        
+        </h4>
+        <br><h4>Arma Corpo-a-corpo &ensp;
+            <input type="text" name="attr_nomearma2" placeholder="|digite o nome da arma|" />&ensp;
+            <input type="radio" name="attr_arma2" value="1" /><span></span>
+            <input type="radio" name="attr_arma2" value="2" /><span></span>
+            <input type="radio" name="attr_arma2" value="3" /><span></span>
+            <input type="radio" name="attr_arma2" value="4" /><span></span>
+            <input type="radio" name="attr_arma2" value="5" /><span></span>
+            <input type="radio" name="attr_arma2" value="6" /><span></span>
+        <button type='roll' name='roll_arma2' value=#macroataque2></button>
+        <input type="text" name="attr_obsarma2" placeholder="|observações&poderes|" />
+                
+                
+        <br><h4>Arma Corpo-a-corpo &ensp;
+            <input type="text" name="attr_nomearma4" placeholder="|digite o nome da arma|" />&ensp;
+            <input type="radio" name="attr_arma4" value="1" /><span></span>
+            <input type="radio" name="attr_arma4" value="2" /><span></span>
+            <input type="radio" name="attr_arma4" value="3" /><span></span>
+            <input type="radio" name="attr_arma4" value="4" /><span></span>
+            <input type="radio" name="attr_arma4" value="5" /><span></span>
+            <input type="radio" name="attr_arma4" value="6" /><span></span>
+        <button type='roll' name='roll_arma4' value=#macroataque4></button>
+        <input type="text" name="attr_obsarma4" placeholder="|observações&poderes|" />
+               
+                
+        </h4>
+       
+        <br><h4>Proteção
+            <input type="text" name="attr_nomeprotecao" placeholder="|digite o nome da Proteção|" />&ensp;
+            <input type="radio" name="attr_protecao1" value="1" /><span></span>
+            <input type="radio" name="attr_protecao1" value="2" /><span></span>
+            <input type="radio" name="attr_protecao1" value="3" checked="checked"/><span></span>
+            <input type="radio" name="attr_protecao1" value="4" /><span></span>
+            <input type="radio" name="attr_protecao1" value="5" /><span></span>
+            <input type="radio" name="attr_protecao1" value="6" /><span></span>
+            <input type="radio" name="attr_protecao1" value="7" /><span></span>
+            <input type="radio" name="attr_protecao1" value="8" /><span></span>
+            <input type="radio" name="attr_protecao1" value="9" /><span></span>
+            <input type="radio" name="attr_protecao1" value="10" /><span></span>
+                <input type="text" name="attr_protecao1" style="width:50px; height:50px;text-align: center; font-size:25px" />
+                <input type="text" name="attr_obsprotecao1" placeholder="|observações&poderes|" />
+           
+        </h4>
+    </div>
+    
+    
+</div>
+<hr/>
+
+<h1 style="margin-bottom: 10px; text-align: center;">PODERES</h1>
+
+
+    <div class="sheet-col" style="width:100%">
+    <div>
+        <textarea name="attr_poder1nome" style="width:30%; height:20px" placeholder="|nome do poder|"></textarea>
+        <button type='roll' name='roll_poder1' value=#poder1></button><br>
+        <textarea name="attr_poder1desc" style="width:100%; height:60px" placeholder="|descrição do poder, crie uma macro com nome de poder1|"></textarea>
+        
+    </div><br>
+    <div>
+        <textarea name="attr_poder2nome" style="width:30%; height:20px" placeholder="|nome do poder|"></textarea>
+        <button type='roll' name='roll_poder2' value=#poder2></button><br>
+        <textarea name="attr_poder2desc" style="width:100%; height:60px" placeholder="|descrição do poder, crie uma macro com nome de poder2|"></textarea>
+    </div>
+    <div>
+        <textarea name="attr_poder3nome" style="width:30%; height:20px" placeholder="|nome do poder|"></textarea>
+        <button type='roll' name='roll_poder3' value=#poder3></button><br>
+        <textarea name="attr_poder3desc" style="width:100%; height:60px" placeholder="|descrição do poder, crie uma macro com nome de poder3||"></textarea>
+        
+    </div><br>
+    <div>
+        <textarea name="attr_poder4nome" style="width:30%; height:20px" placeholder="|nome do poder|"></textarea>
+        <button type='roll' name='roll_poder4' value=#poder4></button><br>
+        <textarea name="attr_poder4desc" style="width:100%; height:60px" placeholder="|descrição do poder, crie uma macro com nome de poder4|"></textarea>
+    </div>
+    
+
